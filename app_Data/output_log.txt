@@ -1,0 +1,242 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) Iris(TM) Graphics 5100 (ID=0xa2e)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\OpenCvSharp.dll (this message is harmless)
+Loading C:\projects\ProjMap64\app_Data\Managed\OpenCvSharp.dll into Unity Child Domain
+- Completed reload, in  0.083 seconds
+desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\projects\ProjMap64\app_Data\Managed\System.dll (this message is harmless)
+0 ... 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ok
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+1 ... 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ok
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+2 ... 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ok
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+<?xml version="1.0"?>
+<opencv_storage>
+<intrinsic type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    6.4063318723050452e+002 0. 3.0456528942835376e+002 0.
+    6.4546661722722570e+002 2.3822998181686091e+002 0. 0. 1.</data></intrinsic>
+<rotation type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>f</dt>
+  <data>
+    2.59552193e+000 -5.61890483e-001 4.99862105e-001</data></rotation>
+<translation type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>3</cols>
+  <dt>f</dt>
+  <data>
+    2.99947567e+001 7.14272919e+001 3.80132172e+002</data></translation>
+<distortion type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    -2.4054340925364487e-001 4.8394349483776589e-001
+    -1.5269915582913596e-002 8.2284038263117244e-004</data></distortion>
+</opencv_storage>
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: b58 -> priority: 1 
+OpenCVException: All the matrices must have the same data type
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvRodrigues2 (intptr,intptr,intptr)
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst, OpenCvSharp.CvMat jacobian) [0x00000] in <filename unknown>:0 
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst) [0x00000] in <filename unknown>:0 
+  at Calibration.GetRotationMatrixFromRotationVector (OpenCvSharp.CvMat rotation_) [0x00000] in <filename unknown>:0 
+  at Calibration.ApplyCalibrationToUnityCamera (OpenCvSharp.CvMat intrinsic, OpenCvSharp.CvMat rotation, OpenCvSharp.CvMat translation) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: All the matrices must have the same data type
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvRodrigues2 (intptr,intptr,intptr)
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst, OpenCvSharp.CvMat jacobian) [0x00000] in <filename unknown>:0 
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst) [0x00000] in <filename unknown>:0 
+  at Calibration.GetRotationMatrixFromRotationVector (OpenCvSharp.CvMat rotation_) [0x00000] in <filename unknown>:0 
+  at Calibration.ApplyCalibrationToUnityCamera (OpenCvSharp.CvMat intrinsic, OpenCvSharp.CvMat rotation, OpenCvSharp.CvMat translation) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: All the matrices must have the same data type
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvRodrigues2 (intptr,intptr,intptr)
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst, OpenCvSharp.CvMat jacobian) [0x00000] in <filename unknown>:0 
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst) [0x00000] in <filename unknown>:0 
+  at Calibration.GetRotationMatrixFromRotationVector (OpenCvSharp.CvMat rotation_) [0x00000] in <filename unknown>:0 
+  at Calibration.ApplyCalibrationToUnityCamera (OpenCvSharp.CvMat intrinsic, OpenCvSharp.CvMat rotation, OpenCvSharp.CvMat translation) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: All the matrices must have the same data type
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvRodrigues2 (intptr,intptr,intptr)
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst, OpenCvSharp.CvMat jacobian) [0x00000] in <filename unknown>:0 
+  at OpenCvSharp.Cv.Rodrigues2 (OpenCvSharp.CvMat src, OpenCvSharp.CvMat dst) [0x00000] in <filename unknown>:0 
+  at Calibration.GetRotationMatrixFromRotationVector (OpenCvSharp.CvMat rotation_) [0x00000] in <filename unknown>:0 
+  at Calibration.ApplyCalibrationToUnityCamera (OpenCvSharp.CvMat intrinsic, OpenCvSharp.CvMat rotation, OpenCvSharp.CvMat translation) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenCVException: Both matrices must have the same number of points
+  at OpenCvSharp.NativeMethods.<.cctor>b__0 (CvStatus status, System.String funcName, System.String errMsg, System.String fileName, Int32 line, IntPtr userdata) [0x00000] in <filename unknown>:0 
+  at (wrapper native-to-managed) OpenCvSharp.NativeMethods:<.cctor>b__0 (OpenCvSharp.CvStatus,intptr,intptr,intptr,int,intptr)
+  at (wrapper managed-to-native) OpenCvSharp.NativeMethods:cvCalibrateCamera2 (intptr,intptr,intptr,OpenCvSharp.CvSize,intptr,intptr,intptr,intptr,OpenCvSharp.CalibrationFlag)
+  at OpenCvSharp.Cv.CalibrateCamera2 (OpenCvSharp.CvMat object_points, OpenCvSharp.CvMat image_points, OpenCvSharp.CvMat point_counts, CvSize image_size, OpenCvSharp.CvMat intrinsic_matrix, OpenCvSharp.CvMat distortion_coeffs, OpenCvSharp.CvMat rotation_vectors, OpenCvSharp.CvMat translation_vectors, CalibrationFlag flags) [0x00000] in <filename unknown>:0 
+  at Calibration.calibrateFromCorrespondences (System.Collections.Generic.List`1 imagePoints, System.Collections.Generic.List`1 worldPoints) [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.TriggerCalibration () [0x00000] in <filename unknown>:0 
+  at CorrespondenceAcquisition.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
