@@ -218,7 +218,7 @@ public class Calibration {
             IplImage[] srcImg = new IplImage[ImageNum];
             for (int i = 0; i < ImageNum; i++)
             {
-                srcImg[i] = new IplImage(string.Format("C:\\Software\\opencvsharp\\sample\\SampleBase\\Data\\Image\\Calibration\\{0:D2}.jpg", i), LoadMode.Color);
+                srcImg[i] = new IplImage(string.Format("C:\\Projects\\opencvsharp\\sample\\SampleBase\\Data\\Image\\Calibration\\{0:D2}.jpg", i), LoadMode.Color);
             }
 
             CvPoint3D32f[,,] objects = new CvPoint3D32f[ImageNum, PatRow, PatCol];
