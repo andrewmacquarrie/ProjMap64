@@ -1,8 +1,11 @@
-﻿using OpenCvSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Emgu.CV;
+using Emgu.CV.Util;
+using Emgu.CV.Structure;
+using Emgu.CV.CvEnum;
 
 namespace Assets
 {
@@ -12,7 +15,7 @@ namespace Assets
 
         static float EULER_EPSILON = 0.00005f;
 
-        static public Rotation RotationMatrixToEulerZXY(CvMat R)
+        static public Rotation RotationMatrixToEulerZXY(Matrix<Double> R)
         {
             var i = 2;
             var j = 0; // EULER_NEXT[2]

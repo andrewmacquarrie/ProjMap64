@@ -58,8 +58,14 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="OpenCvSharp">
-      <HintPath>Assets\Plugins\x64\OpenCvSharp.dll</HintPath>
+    <Reference Include="Emgu.CV">
+      <HintPath>Assets\Plugins\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>Assets\Plugins\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>Assets\Plugins\System.Drawing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

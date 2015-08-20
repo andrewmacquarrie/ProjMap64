@@ -1,6 +1,5 @@
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
-C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\OpenCvSharp.dll
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\UnityEditor.dll
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.dll
@@ -15,3 +14,6 @@ C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.xml
 C:\projects\ProjMap64\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 C:\projects\ProjMap64\obj\Debug\Assembly-CSharp.dll
 C:\projects\ProjMap64\obj\Debug\Assembly-CSharp.pdb
+C:\Projects\ProjMap64\obj\Debug\UnityVS.ProjMap64.CSharp.csprojResolveAssemblyReference.cache
+C:\Projects\ProjMap64\Temp\UnityVS_bin\Debug\Emgu.CV.dll
+C:\Projects\ProjMap64\Temp\UnityVS_bin\Debug\Emgu.Util.dll

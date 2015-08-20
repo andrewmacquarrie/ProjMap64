@@ -66,8 +66,14 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="OpenCvSharp">
- <HintPath>C:/Projects/ProjMap64/Assets/Plugins/x64/OpenCvSharp.dll</HintPath>
+ <Reference Include="Emgu.Util">
+ <HintPath>C:/Projects/ProjMap64/Assets/Plugins/Emgu.Util.dll</HintPath>
+ </Reference>
+ <Reference Include="Emgu.CV">
+ <HintPath>C:/Projects/ProjMap64/Assets/Plugins/Emgu.CV.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>C:/Projects/ProjMap64/Assets/Plugins/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

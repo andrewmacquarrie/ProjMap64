@@ -32,11 +32,6 @@ public class CorrespondenceAcquisition : MonoBehaviour
         _width = (int)Screen.width;
         _calibrator = new Calibration(_mainCamera);
         _calibrating = true;
-
-
-        var r = gameObject.GetComponent<MeshRenderer>();
-        r.enabled = false;
-        _calibrator.DrewTestCalibrateCamera();
     }
 
     void OnGUI()
